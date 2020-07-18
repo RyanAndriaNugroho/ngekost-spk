@@ -19,8 +19,8 @@ class CreateDssFasilitasPenunjangsTable extends Migration
             $table->string('nama');
             $table->float('nilai');
             
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
 
             $table->softDeletes();
         });

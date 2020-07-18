@@ -22,8 +22,8 @@ class CreateDssAdminsTable extends Migration
             $table->string('foto')->nullable();
 
 
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
 
             $table->softDeletes();
         });
