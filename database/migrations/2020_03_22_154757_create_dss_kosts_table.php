@@ -27,8 +27,8 @@ class CreateDssKostsTable extends Migration
             $table->unsignedInteger('id_fasilitas_lingkungan')->index('fk_fasilitas_lingkungan');
 
 
-            $table->timestamp('created_at')->nullable();
-            $table->timestamp('updated_at')->nullable();
+            // $table->timestamp('created_at')->nullable();
+            // $table->timestamp('updated_at')->nullable();
 
             $table->softDeletes();
         });
